@@ -31,7 +31,7 @@ def classify_triangle(a, b, c):
 class TestClassifyTriangle(unittest.TestCase):
 
     def test_classify_triangle(self):
-        a,b,c = (0,0,0)                                                     #minimum number
+        a,b,c = (0,0,0)                                                  
         self.assertEqual(classify_triangle(a,b,c),'Not a triangle!')
         a,b,c = (3,4,0)
         self.assertEqual(classify_triangle(a,b,c),'Not a triangle!')
@@ -57,6 +57,6 @@ if __name__ == "__main__":
     result = classify_triangle(a, b, c)
     if result:
         print(result)
-        
+
     unittest.main() #testing function
 
